@@ -1,3 +1,6 @@
+## Client
+This is a client for https://github.com/metalvexis/radiogaga
+
 ## Requirements
 
 - Server code: https://github.com/metalvexis/radiogaga
