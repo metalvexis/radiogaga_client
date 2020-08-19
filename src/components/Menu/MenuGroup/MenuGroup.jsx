@@ -12,7 +12,7 @@ function MenuGroup(props) {
       let isDisabled = false;
 
       if(props.disabledMenu && props.disabledMenu.length){
-        isDisabled = !!props.disabledMenu.find( id => id == m.id ) 
+        isDisabled = !!props.disabledMenu.find( id => id == m.id ) // intentionally ignore types of ids
       } 
       
       return (

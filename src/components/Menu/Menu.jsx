@@ -74,13 +74,12 @@ export default class Menu extends React.Component {
     for (const key in selectedMenu) {
       if (selectedMenu.hasOwnProperty(key)) {
         const menu = selectedMenu[key];
-        if(menu.id) selected.push(menu.id)
+        if(menu.id) selected.push(+menu.id) // force typecast
       }
     }
 
     const hasConflict = _.intersection(prohibitedMenu, selected).length > 0;
     const completed = selected.length === menus.length;
-
     return (
       <Button variant="success" block disabled={ hasConflict || !completed }>Submit</Button>
     )
