@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const baseURL = process.env.REACT_APP_API_URL;
-console.log(`Ecommerce API : ${baseURL}`);
+console.log(`API : ${baseURL}`);
 
 const clientAxiosJson = axios.create({
   baseURL,
