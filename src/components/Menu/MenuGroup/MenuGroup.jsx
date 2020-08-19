@@ -8,7 +8,6 @@ function MenuGroup(props) {
   let { menu } = props;
   
   function renderMenuItem () {
-    
     return menu.map( (m, idx) => {
       let isDisabled = false;
 
